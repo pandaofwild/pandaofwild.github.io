@@ -21,11 +21,17 @@
             font-family: 'NotoSansKR';
             src: url('font/NotoSansKR-Black.otf') format('opentype')
         }
+	@font-face {
+ 	   font-family: 'Chosunilbo_myungjo';
+ 	   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
     </style>
 
     <script>
         $(document).ready(function() {
-            var fontList = ['맑은 고딕','NotoSansKR'];
+            var fontList = ['맑은 고딕','NotoSansKR','조선일보명조','Chosunilbo_myungjo'];
             $('#summernote').summernote({
                 lang: 'ko-KR',
                 fontNames: fontList,
