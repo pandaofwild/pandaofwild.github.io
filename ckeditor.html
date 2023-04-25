@@ -54,8 +54,7 @@
             CKEDITOR.ClassicEditor.create(document.getElementById("editor"), {
                 // https://ckeditor.com/docs/ckeditor5/latest/features/toolbar/toolbar.html#extended-toolbar-configuration-format
                 toolbar: {
-                    items: [
-                        'exportPDF','exportWord', '|',
+                    items: [            
                         'findAndReplace', 'selectAll', '|',
                         'heading', '|',
                         'bold', 'italic', 'strikethrough', 'underline', 'code', 'subscript', 'superscript', 'removeFormat', '|',
@@ -67,8 +66,7 @@
                         'alignment', '|',
                         'link', 'insertImage', 'blockQuote', 'insertTable', 'mediaEmbed', 'codeBlock', 'htmlEmbed', '|',
                         'specialCharacters', 'horizontalLine', 'pageBreak', '|',
-                        'textPartLanguage', '|',
-                        'sourceEditing'
+                         'sourceEditing'
                     ],
                     shouldNotGroupWhenFull: true
                 },
@@ -100,11 +98,11 @@
                     options: [
                         'default',
                         'Arial, Helvetica, sans-serif',
-                        'Courier New, Courier, monospace',
+                       /* 'Courier New, Courier, monospace',
                         'Georgia, serif',
                         'Lucida Sans Unicode, Lucida Grande, sans-serif',
                         'Tahoma, Geneva, sans-serif',
-                        'Times New Roman, Times, serif',
+                        'Times New Roman, Times, serif',*/
                         'Trebuchet MS, Helvetica, sans-serif',
                         'Verdana, Geneva, sans-serif',
                         'Chosunilbo_myungjo'
@@ -114,7 +112,7 @@
                 },
                 // https://ckeditor.com/docs/ckeditor5/latest/features/font.html#configuring-the-font-size-feature
                 fontSize: {
-                    options: [ 10, 12, 14, 'default', 18, 20, 22 ],
+                    options: [ 10, 12,13, 14, 'default',16, 18, 20, 22,30 ],
                     supportAllValues: true
                 },
                 // Be careful with the setting below. It instructs CKEditor to accept ALL HTML markup.
@@ -188,6 +186,9 @@
                     'RevisionHistory',
                     'Pagination',
                     'WProofreader',
+		'exportPDF',
+		'exportWord',
+		'textPartLanguage',
                     // Careful, with the Mathtype plugin CKEditor will not load when loading this sample
                     // from a local file system (file://) - load this site via HTTP server if you enable MathType
                     'MathType'
