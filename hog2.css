@@ -1,9 +1,9 @@
 
-  @keyframes my-animation {
+  @keyframes backcolor{
     from {
-      background-color: #ff7a59;
+      background: #ff7a59;
     }
     to {
-      background-color: #33475b;
+      background: #33475b;
     }
   }
