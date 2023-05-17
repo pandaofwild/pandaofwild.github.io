@@ -1,1 +1,13 @@
 
+  @keyframes my-animation {
+    from {
+      background-color: #ff7a59;
+      width: 300px;
+      top: 10px;
+    }
+    to {
+      background-color: #33475b;
+      width: 50px;
+      top: 100px;
+    }
+  }
